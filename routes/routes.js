@@ -24,6 +24,7 @@ router.post('/add', async (req, res, next) => {
             address: req.body.address,
             phone: req.body.phone,
             parent: req.body.parent,
+            matakuliah: req.body.matakuliah,
         });
 
         // Save the new student to the database
@@ -71,6 +72,7 @@ router.put('/students/edit/:id', (req, res) => {
         address: req.body.address,
         phone: req.body.phone,
         parent: req.body.parent,
+        matakuliah: req.body.matakuliah,
     };
 
     // Use findByIdAndUpdate with the correct callback structure

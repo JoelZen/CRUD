@@ -16,6 +16,10 @@ const studentSchema = new mongoose.Schema({
       type: String,
       required: true,
     },
+    matakuliah: {
+      type: Array,
+      required: true,
+    }
   });
   
   // Create the Student model
